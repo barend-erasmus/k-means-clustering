@@ -1,0 +1,22 @@
+{
+  "name": "k-means-clustering",
+  "version": "1.0.0",
+  "description": "k-means clustering is a method of vector quantization, originally from signal processing, that is popular for cluster analysis in data mining. k-means clustering aims to partition n observations into k clusters in which each observation belongs to the cluster with the nearest mean, serving as a prototype of the cluster.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/barend-erasmus/k-means-clustering.git"
+  },
+  "author": "Barend Erasmus",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/barend-erasmus/k-means-clustering/issues"
+  },
+  "homepage": "https://github.com/barend-erasmus/k-means-clustering#readme",
+  "dependencies": {
+    "stats-lite": "^2.1.0"
+  }
+}
