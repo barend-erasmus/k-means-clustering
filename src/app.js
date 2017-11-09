@@ -38,11 +38,19 @@ const centroids = [];
 centroids.push({
     point: data[1],
     items: [],
+    name: 'A',
+});
+centroids.push({
+    point: data[2],
+    items: [],
+    name: 'B',
 });
 centroids.push({
     point: data[5],
     items: [],
+    name: 'C',
 });
+
 
 for (const item of data) {
 
@@ -54,7 +62,9 @@ for (const item of data) {
     centroid.items.push(item);
 }
 
-console.log(centroids);
+for (const centroid of centroids) {
+    console.log(`${centroid.name} -> (${centroid.point.x},${centroid.point.y})`);
+}
 
 function calculateDistanceFromCentriod(centroid, item) {
     return Math.sqrt(Math.pow(item.x - centroid.point.x, 2) + Math.pow(item.y - centroid.point.y, 2));
