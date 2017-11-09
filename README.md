@@ -2,7 +2,7 @@
 
 k-means clustering is a method of vector quantization, originally from signal processing, that is popular for cluster analysis in data mining. k-means clustering aims to partition n observations into k clusters in which each observation belongs to the cluster with the nearest mean, serving as a prototype of the cluster.
 
-## Example
+## The Problem
 
 Here we have a dataset containing a list of points.
 
@@ -20,6 +20,6 @@ When these points are plotted on a chart we can cleary see that there are three 
 
 ![](https://github.com/barend-erasmus/k-means-clustering/raw/master/images/chart-annotations.png)
 
-How can a mathematically determine the boundaries of these three groups?
+How can we mathematically determine the boundaries of these three groups?
 
 By using k-Means Clustering.
