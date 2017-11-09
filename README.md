@@ -1,6 +1,6 @@
 # k-Means Clustering
 
-k-means clustering is a method of vector quantization, originally from signal processing, that is popular for cluster analysis in data mining. k-means clustering aims to partition n observations into k clusters in which each observation belongs to the cluster with the nearest mean, serving as a prototype of the cluster.
+k-Means Clustering is a method of vector quantization, originally from signal processing, that is popular for cluster analysis in data mining. k-means clustering aims to partition observations into k clusters in which each observation belongs to the cluster with the nearest mean, serving as a prototype of the cluster.
 
 ## The Problem
 
@@ -16,7 +16,7 @@ Here we have a dataset containing a list of points.
 | 4.5 | 5   | C     |
 | 3.5 | 4.5 | B     |
 
-When these points are plotted on a chart we can cleary see that there are three distinct groups.
+When these points are plotted on a chart we can clearly see that there are three distinct groups.
 
 ![](https://github.com/barend-erasmus/k-means-clustering/raw/master/images/chart-annotations.png)
 
