@@ -65,3 +65,5 @@ Once this has been done for each data point, your centriods should have the foll
 | 1.25  | 1.5 |
 | 3.375 | 4.5 |
 | 4.75  | 6   |
+
+![](https://github.com/barend-erasmus/k-means-clustering/raw/master/images/chart-centroids.png)
