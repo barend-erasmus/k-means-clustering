@@ -52,28 +52,28 @@ centroids.push({
 });
 
 
-for (const item of data) {
+for (const dataPoint of data) {
 
-    const centroid = getNearestCentroid(centroids, item);
+    const centroid = getNearestCentroid(centroids, dataPoint);
 
-    centroid.point.x = (item.x + centroid.point.x) / 2;
-    centroid.point.y = (item.y + centroid.point.y) / 2;
+    centroid.point.x = (dataPoint.x + centroid.point.x) / 2;
+    centroid.point.y = (dataPoint.y + centroid.point.y) / 2;
 
-    centroid.items.push(item);
+    centroid.items.push(dataPoint);
 }
 
 for (const centroid of centroids) {
     console.log(`${centroid.name} -> (${centroid.point.x},${centroid.point.y})`);
 }
 
-function calculateDistanceFromCentriod(centroid, item) {
-    return Math.sqrt(Math.pow(item.x - centroid.point.x, 2) + Math.pow(item.y - centroid.point.y, 2));
+function calculateDistanceFromCentriod(centroid, dataPoint) {
+    return Math.sqrt(Math.pow(dataPoint.x - centroid.point.x, 2) + Math.pow(dataPoint.y - centroid.point.y, 2));
 }
 
-function getNearestCentroid(centroids, item) {
+function getNearestCentroid(centroids, dataPoint) {
     return centroids.map((centroid) => {
         return {
-            distance: calculateDistanceFromCentriod(centroid, item),
+            distance: calculateDistanceFromCentriod(centroid, dataPoint),
             centroid: centroid,
         };
     }).sort((a, b) => {

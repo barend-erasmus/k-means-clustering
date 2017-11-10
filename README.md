@@ -23,3 +23,45 @@ When these points are plotted on a chart we can clearly see that there are three
 How can we mathematically determine the boundaries of these three groups?
 
 By using k-Means Clustering.
+
+## The Solution
+
+### Step 1:
+
+Select a k-Factor which will determine the number of clusters.
+
+In this example we have choosen 3 as our k-Factor.
+
+Although there are ways to determine the optimal numbers of clusters from a given dataset, we'll not cover it in the document.
+
+### Step 2:
+
+Select 3, the k-Factor, data points from the given dataset and label them accordingly. These 3 data points will be called our centriods.
+
+In this example we have selected:
+
+|  X  |  Y  |
+| --- | --- |
+| 1.5 | 2   |
+| 3   | 4   |
+| 4.5 | 5   |
+
+### Step 3:
+
+Loop through each data point and find its nearest centriod, draw a line between them and move the centroid to the middle of line.
+
+
+```javascript
+const centroid = getNearestCentroid(centroids, dataPoint);
+
+centroid.x = (dataPoint.x + centroid.x) / 2;
+centroid.y = (dataPoint.y + centroid.y) / 2;
+```
+
+Once this has been done for each data point, your centriods should have the following coordinates.
+
+|  X    |  Y  |
+| ----- | --- |
+| 1.25  | 1.5 |
+| 3.375 | 4.5 |
+| 4.75  | 6   |
