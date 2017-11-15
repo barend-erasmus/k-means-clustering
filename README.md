@@ -30,13 +30,13 @@ By using k-Means Clustering.
 
 Select a k-Factor which will determine the number of clusters.
 
-In this example we have choosen 3 as our k-Factor.
+In this example, we have chosen 3 as our k-Factor.
 
 Although there are ways to determine the optimal numbers of clusters from a given dataset, we'll not cover it in the document.
 
 ### Step 2:
 
-Select 3, the k-Factor, data points from the given dataset and label them accordingly. These 3 data points will be called our centriods.
+Select 3, the k-Factor, data points from the given dataset and label them accordingly. These 3 data points will be called our centroids.
 
 In this example we have selected:
 
@@ -48,7 +48,7 @@ In this example we have selected:
 
 ### Step 3:
 
-Loop through each data point and find its nearest centriod, draw a line between them and move the centroid to the middle of line.
+Loop through each data point and find its nearest centroid, draw a line between them and move the centroid to the middle of the line.
 
 
 ```javascript
@@ -58,7 +58,7 @@ centroid.x = (dataPoint.x + centroid.x) / 2;
 centroid.y = (dataPoint.y + centroid.y) / 2;
 ```
 
-Once this has been done for each data point, your centriods should have the following coordinates.
+Once this has been done for each data point, your centroids should have the following coordinates.
 
 |  X    |  Y  |
 | ----- | --- |
